@@ -4,14 +4,12 @@
     <draggable class="editorSidebar__blocks"
                :class="editorSidebarClasses"
                v-model="blocks"
-               :options="{
-                    group: {
+               :handle="'.editorSidebar__button'"
+               :group="{
                       name: 'editorBlocks',
                       pull: 'clone',
                       put: false
-                    },
-                    handle: '.editorSidebar__button'
-                    }">
+                      }">
       <!--eslint-enable-->
       <div
           class="editorSidebar__button"
